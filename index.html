@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Notícias Campo Mourão - IA Local</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Notícias Campo Mourão</h1>
+    <p>Extração automática de informações usando IA local (sem API)</p>
+</header>
+
+<section id="container">
+
+    <label for="newsInput">Cole aqui a notícia completa:</label>
+    <textarea id="newsInput" placeholder="Ex: Hoje no Rio de Janeiro duas pessoas..."></textarea>
+
+    <label for="filter">O que você deseja extrair?</label>
+    <select id="filter">
+        <option value="local">Local</option>
+        <option value="data">Data</option>
+        <option value="pessoas">Pessoas mencionadas</option>
+        <option value="resumo">Resumo da notícia</option>
+        <option value="motivo">Motivo do acontecimento</option>
+    </select>
+
+    <button id="analyzeButton">Extrair</button>
+
+    <div id="resultBox">
+        <h2>Resultado</h2>
+        <p id="resultText">Nenhuma análise ainda.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>Campo Mourão • PR</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
